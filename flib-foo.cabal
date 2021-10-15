@@ -1,0 +1,12 @@
+cabal-version: 1.16
+name: flib-foo
+version: 0.1
+build-type: Simple
+
+foreign-library flib-foo
+  type: native-shared
+  options: standalone
+  c-sources: flib-foo.c
+  ghc-options: -threaded
+  build-depends: base
+  default-language: Haskell2010
